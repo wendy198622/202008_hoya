@@ -399,7 +399,7 @@
 					</div>
 					<div class="container">
 						<div class="item full">
-							<input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+							<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
 							<label for="checkbox">我同意通過電話方式與我聯絡</label>
 						</div>
 					</div>
@@ -425,6 +425,8 @@
 				name: "",
 				phone: "",
 				check: false,
+				message:"",
+				email:"",
 				msg:""
 			},
 			methods: {
@@ -439,10 +441,13 @@
 					self.popupIndex = 10
 
 					var content = "姓名:" + self.name + "<br>" +
-						"電話:" + self.phone + "<br>";
+						"信箱:" + self.email + "<br>"+
+						"電話:" + self.phone + (self.check ? "(可電話聯繫)" : "(不可電話聯繫)") +"<br>"+
+						"留言:" + self.message + "<br>";
+
 					Email.send({
 						SecureToken: "e72b0d9a-0075-4eff-8b5e-74df58c177e4", //勿更動
-						To: 'wendy198622@gmail.com', //收件者填這
+						To: 'gn01658704@gmail.com', //收件者填這
 						From: "tt836427@gmail.com", //寄件者email，此為虛擬，勿更動
 						Subject: "我要預約看房", //信件主旨
 						Body: content
