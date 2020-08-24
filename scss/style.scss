@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
 // setting
-*{ box-sizing: border-box; color: #362e2b;}
+*{ box-sizing: border-box; color: #362e2b; font-family: 'Noto Sans TC', sans-serif;}
 a{ color: #000000;}
 img{ display: block; margin: 0 auto;}
 .container, .photowall{
@@ -42,7 +42,7 @@ img{ display: block; margin: 0 auto;}
     }
     nav{
         width: 52px;
-        position: absolute;
+        position: fixed;
         z-index: 1;
         right: calc(36/1920*100%);
         top: calc(30/1920*100%);
