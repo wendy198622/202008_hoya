@@ -666,6 +666,12 @@ img {
   font-size: 22px;
 }
 
+@media (max-width: 768px) {
+  .photoBox .photoContent .photowall span {
+    font-size: 3vw;
+  }
+}
+
 .photoBox2 .photoTop .introTitle, .photoBox4 .photoTop .introTitle {
   float: left;
 }
@@ -927,7 +933,13 @@ img {
   float: left;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .contactBox .formBox .formContent .half .item label {
+    font-size: 3vw;
+  }
 }
 
 .contactBox .formBox .formContent .half .item input[type="text"] {
@@ -936,8 +948,14 @@ img {
   float: right;
   background-color: transparent;
   border-bottom: 1px solid #000;
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .contactBox .formBox .formContent .half .item input[type="text"] {
+    font-size: 3vw;
+  }
 }
 
 .contactBox .formBox .formContent .half .item input[type="text"]:focus {
@@ -949,8 +967,14 @@ img {
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #000;
-  font-size: 22px;
+  font-size: 18px;
   height: 130px;
+}
+
+@media (max-width: 768px) {
+  .contactBox .formBox .formContent .half .item #message {
+    font-size: 3vw;
+  }
 }
 
 .contactBox .formBox .formContent .half .item #message:checked, .contactBox .formBox .formContent .half .item #message:focus {

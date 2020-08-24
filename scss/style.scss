@@ -460,6 +460,9 @@ img{ display: block; margin: 0 auto;}
                 color: #fff;
                 text-shadow: 0 2px 2px rgba(0,0,0,.8);
                 font-size: 22px;
+                @media (max-width:768px) { 
+                    font-size: 3vw;
+                }
             }
         }
     }
@@ -668,7 +671,10 @@ img{ display: block; margin: 0 auto;}
                         float: left;
                         margin-top: 20px;
                         margin-bottom: 20px;
-                        font-size: 22px;
+                        font-size: 18px;
+                        @media (max-width:768px) {
+                            font-size: 3vw;
+                        }
                     }
                     input[type="text"]{
                         width: calc(100% - 142px);
@@ -676,8 +682,11 @@ img{ display: block; margin: 0 auto;}
                         float: right;
                         background-color: transparent;
                         border-bottom: 1px solid #000;
-                        font-size: 22px;
+                        font-size: 18px;
                         margin-top: 10px;
+                        @media (max-width:768px) {
+                            font-size: 3vw;
+                        }
                         &:focus{
                             outline: 0;
                         }
@@ -687,8 +696,11 @@ img{ display: block; margin: 0 auto;}
                         background-color: transparent;
                         border: 0;
                         border-bottom: 1px solid #000;
-                        font-size: 22px;
+                        font-size: 18px;
                         height: 130px;
+                        @media (max-width:768px) {
+                            font-size: 3vw;
+                        }
                         &:checked, &:focus{
                             outline: 0;
                             border-bottom: 1px solid #000;

@@ -42,10 +42,10 @@
 		<section class="kvBox">
 			<nav>
 				<ul>
-					<li class="wow zoomIn" data-wow-delay="0s"><a href="#"><img src="img/icon_phone.svg" alt="">來電預約</a></li>
+					<li class="wow zoomIn" data-wow-delay="0s"><a href="tel:03-4191558"><img src="img/icon_phone.svg" alt="">來電預約</a></li>
 					<li class="wow zoomIn" data-wow-delay="0.2s"><a href="#"><img src="img/icon_email.svg" alt="">線上預約</a></li>
-					<li class="wow zoomIn" data-wow-delay="0.4s"><a href="#"><img src="img/icon_location.svg" alt="">路線導航</a></li>
-					<li class="wow zoomIn" data-wow-delay="0.6s"><a href="#"><img src="img/icon_facebook.svg" alt="">粉絲專頁</a></li>
+					<li class="wow zoomIn" data-wow-delay="0.4s"><a href="javascript" class="map" data-block="mapBox"><img src="img/icon_location.svg" alt="">路線導航</a></li>
+					<li class="wow zoomIn" data-wow-delay="0.6s"><a href="https://bit.ly/2QfV5f0" target="_blank"><img src="img/icon_facebook.svg" alt="">粉絲專頁</a></li>
 				</ul>
 			</nav>
 			<div class="kvImg">
@@ -353,7 +353,7 @@
 			
 		</section>
 		<section class="contactBox">
-			<div class="mapBox">
+			<div class="mapBox" id="mapBox">
 				<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.2174928363534!2d121.20049831500341!3d24.890561884039737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683cce55b14fb9%3A0x766065a837f2acd1!2zMzI05qGD5ZyS5biC5bmz6Y6u5Y2A6Ieq55Sx6KGXN-W3tzUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1598164470081!5m2!1szh-TW!2stw"
 				frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -472,6 +472,16 @@
 				prevEl: '.swiper-button-prev',
 			},
 		});
+
+		$(".map").on("click", function() {
+            var block = $(this).data("block");
+            var pos = $("#" + block).offset().top - 100;
+            $("html, body").animate({ scrollTop: pos }, 500);
+		});
+		
+        $(".gotoTop").on("click", function() {
+          $("html, body").animate({ scrollTop: 0 }, 500);
+        });
 	</script>
 	
 </body>
