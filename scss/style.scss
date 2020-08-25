@@ -31,6 +31,7 @@ img{ display: block; margin: 0 auto;}
 #app{
     background: url(../img/bg.jpg) center top repeat-y;
     background-size: 100% auto;
+    position: relative;
 }
 .kvBox{
     padding-bottom: 100px;
@@ -43,7 +44,7 @@ img{ display: block; margin: 0 auto;}
     nav{
         width: 52px;
         position: fixed;
-        z-index: 1;
+        z-index: 10;
         right: calc(36/1920*100%);
         top: calc(30/1920*100%);
         @media (max-width:960px) {
@@ -773,6 +774,16 @@ footer{
     color: #fff;
     text-align: center;
 }
+.goTop{
+    width: calc(59/1920*100%);
+    position: fixed;
+    z-index: 10;
+    bottom: 25px;
+    right: 40px;
+    &:hover{
+        cursor: pointer;
+    }
+}
 .swiper-container {
     .swiper-slide{
         position: relative;
@@ -917,48 +928,35 @@ footer{
         // }
     }
 }
-.slider, .slider_popup{
+.slider{
     position: relative;
-    .slick-dots{
-        position: absolute;
-        bottom: 20px;
-        li {
-            button{
-                &:before{
-                    content: "";
-                    width: 12px;
-                    height: 12px;
-                    background: #fff;
-                    border-radius: 50%;
-                }
-            }
-
-        }
-    }
     .slick-prev{
         left: 0;
         z-index: 10;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/arrow.svg);
         &:before{
-            content: "\e5cb";
+            content: "";
         }
     }
     .slick-next{
         right: 0;
         z-index: 10;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/arrow.svg);
+        transform: scaleX(-1);
         &:before{
-            content: "\e5cc";
+            content: "";
         }
     }
     .slick-prev:before, .slick-next:before {
-        font-family: 'Material Icons';
-        font-size: 60px;
-        line-height: 1;
-        opacity: .75;
-        color: white;
+        // font-family: 'Material Icons';
+        // font-size: 60px;
+        // line-height: 1;
+        // opacity: .75;
+        // color: white;
     }
 }
 .slider_popup{

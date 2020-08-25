@@ -56,6 +56,7 @@ img {
 #app {
   background: url(../img/bg.jpg) center top repeat-y;
   background-size: 100% auto;
+  position: relative;
 }
 
 .kvBox {
@@ -72,7 +73,7 @@ img {
 .kvBox nav {
   width: 52px;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   right: calc(36/1920*100%);
   top: calc(30/1920*100%);
 }
@@ -1051,6 +1052,18 @@ footer {
   text-align: center;
 }
 
+.goTop {
+  width: calc(59/1920*100%);
+  position: fixed;
+  z-index: 10;
+  bottom: 25px;
+  right: 40px;
+}
+
+.goTop:hover {
+  cursor: pointer;
+}
+
 .swiper-container .swiper-slide {
   position: relative;
 }
@@ -1238,51 +1251,34 @@ footer {
   visibility: visible;
 }
 
-.slider, .slider_popup {
+.slider {
   position: relative;
 }
 
-.slider .slick-dots, .slider_popup .slick-dots {
-  position: absolute;
-  bottom: 20px;
-}
-
-.slider .slick-dots li button:before, .slider_popup .slick-dots li button:before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  border-radius: 50%;
-}
-
-.slider .slick-prev, .slider_popup .slick-prev {
+.slider .slick-prev {
   left: 0;
   z-index: 10;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow.svg);
 }
 
-.slider .slick-prev:before, .slider_popup .slick-prev:before {
-  content: "\e5cb";
+.slider .slick-prev:before {
+  content: "";
 }
 
-.slider .slick-next, .slider_popup .slick-next {
+.slider .slick-next {
   right: 0;
   z-index: 10;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow.svg);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
-.slider .slick-next:before, .slider_popup .slick-next:before {
-  content: "\e5cc";
-}
-
-.slider .slick-prev:before, .slider .slick-next:before, .slider_popup .slick-prev:before, .slider_popup .slick-next:before {
-  font-family: 'Material Icons';
-  font-size: 60px;
-  line-height: 1;
-  opacity: .75;
-  color: white;
+.slider .slick-next:before {
+  content: "";
 }
 
 .slider_popup .slick-dots {
