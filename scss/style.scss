@@ -65,9 +65,18 @@ img{ display: block; margin: 0 auto;}
                 }
                 a{
                     font-size: 13px;
-                    img{
-                        width: 24px;
+                    line-height: 1;
+                    svg{
+                        width: 45%;
+                        display: block;
                         margin: 0 auto 10px;
+                        fill:#231815;
+                    }
+                    &.white{
+                        color: #ffffff;
+                        svg{
+                            fill:#ffffff;
+                        }
                     }
                 }
             }

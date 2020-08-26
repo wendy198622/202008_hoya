@@ -109,11 +109,22 @@ img {
 
 .kvBox nav ul li a {
   font-size: 13px;
+  line-height: 1;
 }
 
-.kvBox nav ul li a img {
-  width: 24px;
+.kvBox nav ul li a svg {
+  width: 45%;
+  display: block;
   margin: 0 auto 10px;
+  fill: #231815;
+}
+
+.kvBox nav ul li a.white {
+  color: #ffffff;
+}
+
+.kvBox nav ul li a.white svg {
+  fill: #ffffff;
 }
 
 .kvBox .kvImg {
