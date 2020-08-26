@@ -163,6 +163,7 @@ img {
 
 .kvBox .kvTitle {
   width: calc(487/1920*100%);
+  margin: 0 auto;
   float: left;
   margin-left: -20px;
   margin-top: calc(180/1000*100%);
@@ -170,8 +171,10 @@ img {
 
 @media (max-width: 960px) {
   .kvBox .kvTitle {
-    width: calc(718/960*100%);
-    margin-top: calc(150/960*100%);
+    width: calc(500/960*100%);
+    margin-top: calc(1140/960*100%);
+    float: unset;
+    margin-left: auto;
   }
 }
 
