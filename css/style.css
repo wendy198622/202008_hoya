@@ -60,8 +60,9 @@ img {
 }
 
 .kvBox {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {
@@ -71,7 +72,7 @@ img {
 }
 
 .kvBox nav {
-  width: 52px;
+  width: 60px;
   position: fixed;
   z-index: 10;
   right: calc(36/1920*100%);
@@ -128,12 +129,12 @@ img {
 }
 
 .kvBox .kvImg {
-  width: calc(1635/1920*100%);
+  width: calc(1288/1920*100%);
   height: 0;
-  padding-bottom: calc(777/1920*100%);
-  margin: 0 auto;
+  padding-bottom: calc(915/1920*100%);
+  float: left;
   position: relative;
-  background: url(../img/kv.png) top center no-repeat;
+  background: url(../img/kv.png) top left no-repeat;
   background-size: 100% auto;
 }
 
@@ -161,8 +162,10 @@ img {
 }
 
 .kvBox .kvTitle {
-  width: calc(593/1920*100%);
-  margin: 60px auto 0;
+  width: calc(487/1920*100%);
+  float: left;
+  margin-left: -20px;
+  margin-top: calc(180/1000*100%);
 }
 
 @media (max-width: 960px) {
@@ -177,7 +180,7 @@ img {
 }
 
 .kvBox .kvTrees {
-  width: calc(1890/1920*100%);
+  width: calc(1720/1920*100%);
   height: 0;
   padding-bottom: calc(722.5/1920*100%);
   position: absolute;
@@ -206,7 +209,7 @@ img {
   width: 100%;
   padding-bottom: 100px;
   background: url(../img/pic1.png) center top no-repeat;
-  background-size: auto 483px;
+  background-size: 100% auto;
   overflow: hidden;
 }
 
@@ -319,7 +322,7 @@ img {
 
 .introBox .introContent .introSubtitle {
   width: 100%;
-  height: 160px;
+  height: 220px;
   background: url(../img/intro_bg1.png) center top no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -1065,9 +1068,9 @@ footer {
 
 .goTop {
   width: calc(59/1920*100%);
-  position: fixed;
+  position: absolute;
   z-index: 10;
-  bottom: 25px;
+  bottom: 0;
   right: 40px;
 }
 
